@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: pokeapi
-          image: raul595/pokeapi:v2 
+          image: raul595/pokeapi:v1
+          imagePullPolicy: Always
           envFrom:
             - configMapRef:
                 name: app-env-config
@@ -25,3 +26,4 @@ spec:
         - name: auto-logs
           persistentVolumeClaim:
             claimName: auto-pvc
+
