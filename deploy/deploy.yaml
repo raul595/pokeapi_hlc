@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: pokeapi
-          image: raul595/pokeapi:v1 
+          image: raul595/pokeapi:v2 
           envFrom:
             - configMapRef:
                 name: app-env-config
