@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apireact
+  name: pokeapi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apireact
+      app: pokeapi
   template:
     metadata:
       labels:
-        app: apireact
+        app: pokeapi
     spec:
       containers:
-        - name: apireact
-          image: raul595/react:v1
+        - name: pokeapi
+          image: raul595/pokeapi
           envFrom:
             - configMapRef:
                 name: app-env-config

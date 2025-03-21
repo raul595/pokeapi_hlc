@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: apireact-s
+  name: pokeapi-s
   labels:
-    app: apireact
+    app: pokeapi
 spec:
   selector:
-    app: apireact
+    app: pokeapi
   type: LoadBalancer
   ports:
   - name: http-port
