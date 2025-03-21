@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-env-config
+data:
+  CONTEXTO: /home/usuario/Caronte
+  AUTOR: raul595
+  TZ: Europe/Madrid
+  PROYECTO: react_hlc
+  GITHUB: https://github.com/raul595/pokeapi_hlc.git
+  USUARIO: raul
+  PASSWD: raul
+  HOSTNAME: pokeapi
+  PORT_SSH: "45678"
+  PORT_ORIGEN: "8082" 

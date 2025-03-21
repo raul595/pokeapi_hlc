@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apireact-s
+  labels:
+    app: apireact
+spec:
+  selector:
+    app: apireact
+  type: LoadBalancer
+  ports:
+  - name: http-port
+    protocol: TCP
+    port: 82  # Puerto expuesto en el servicio
+    targetPort: 80  # Puerto expuesto en el contenedor
+    nodePort: 30480  # Para acceder desde el exterior (en el rango 30000-32767)
