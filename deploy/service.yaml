@@ -9,7 +9,8 @@ spec:
     app: pokeapi
   type: LoadBalancer
   ports:
-  - name: http-port
-    protocol: TCP
-    port: 82  # Puerto expuesto en el servicio
-    targetPort: 80  # Puerto expuesto en el contenedor
+    - name: http-port
+      protocol: TCP
+      port: 82
+      targetPort: 3000
+
