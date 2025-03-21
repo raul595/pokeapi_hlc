@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: apireact-s
+  name: react2-s
   labels:
-    app: apireact
+    app: react2
 spec:
   selector:
-    app: apireact
+    app: react2
   type: LoadBalancer
   ports:
   - name: http-port

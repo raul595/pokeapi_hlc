@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apireact
+  name: react2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apireact
+      app: react2
   template:
     metadata:
       labels:
-        app: apireact
+        app: react2
     spec:
       containers:
-        - name: apireact
+        - name: react2
           image: raul595/react:v1
           envFrom:
             - configMapRef:

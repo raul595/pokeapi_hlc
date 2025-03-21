@@ -45,7 +45,7 @@ pipeline {
                 script {
                         sh "kubectl apply -f deploy/configMap.yaml"
                         sh "kubectl apply -f deploy/pvc.yaml"
-                        sh "kubectl delete deploy apireact"
+                        sh "kubectl delete deploy react2"
                         sh "kubectl apply -f deploy/deploy.yaml"
                         sh "kubectl apply -f deploy/service.yaml"
                     }
