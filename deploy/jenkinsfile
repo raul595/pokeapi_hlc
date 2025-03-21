@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clonar repositorio git pokeapi desde Github ok') {
             steps {
-                git branch: 'master', url: 'https://github.com/raul595/pokeapi_hlc.git'
+                git branch: 'main', url: 'https://github.com/raul595/pokeapi_hlc.git'
             }
         }
          stage('Acciones'){
